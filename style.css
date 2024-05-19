@@ -1213,6 +1213,11 @@ font-weight: 700;
 /* 360 */
 @media only screen and (max-width:360px)
 {
+		.inner-img{
+	width: 100px;
+	height: 80px;
+	padding: 15px;
+	}	
 	.pan-2-li{
 		font-size: .8rem;
 		height: 1800px;
@@ -1225,3 +1230,18 @@ font-weight: 700;
 	
 	
 }
+/* i
+@media only screen and (max-width:360px)
+{
+	.pan-2-li{
+		font-size: .8rem;
+		height: 1800px;
+		justify-content: space-between;
+	}
+	.pan-2-li a{
+		width: 100%;
+		
+	}
+	
+	
+} 	 */
