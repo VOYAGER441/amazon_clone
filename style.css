@@ -995,25 +995,9 @@ font-weight: 700;
 
 /* media query for responsive website for 412px*/
 
-@media only screen and (max-width:414px)
+@media only screen and (max-width: 412px)
 {
 	
-	.navbar{
-		display: flex;
-		width: 412px;
-		height: 100px;
-		justify-content: space-evenly;
-		align-items: center;
-		overflow: hidden;
-		position: fixed;
-	}
-	.logo {
-		background-image: url("img/klipartz.com.png");
-		background-size: cover;
-		height: 40px;
-		width: 100%;
-		margin-top: 10px;	
-	}
 	.pan-option{
 		display: none;
 	}
@@ -1029,7 +1013,8 @@ font-weight: 700;
 	width: auto;
 	height: 200px;
 	overflow: hidden;
-	}
+	margin-top: 50px;
+}
 	.hero-mea{
 		margin-top: 100px;
 		font-size: .8rem;
@@ -1039,14 +1024,13 @@ font-weight: 700;
 		margin: 10px 15px 10px 15px;
 	}
 	.outer{
-		width: 100%;
+		width: 70%;
 		
 	}
-	.inner-img{
-	width: 120px;
-	height: 100px;
-	padding: 15px;
-	}	
+		.inner-img{
+			width: 10px;
+			height: 10px;
+		}
 	.pan-2-li{
 		font-size: .8rem;
 		height: 800px;
@@ -1202,6 +1186,11 @@ font-weight: 700;
 		position: fixed;
 	}
 	/* */
+	.inner-img{
+		width: 100px;
+		height: 80px;
+		padding: 15px;
+		}
 	.nav-search{
 		width: 30%;
 	}
