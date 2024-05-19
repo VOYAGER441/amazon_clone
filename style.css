@@ -10,6 +10,8 @@
 	display: flex;
 	align-items: center;
 	justify-content:space-evenly;
+	flex-wrap: wrap;
+	position: fixed;
 }
 .nav-logo {
 	height: 50px;
@@ -141,11 +143,87 @@ font-weight: 700;
 	justify-content:space-evenly;
 	
 }
+/* menu */
+#menu__toggle {
+	opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+	transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+	top: 0;
+	transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+	left: 0 !important;
+  }
+  .menu__btn {
+	position: fixed;
+	top: 115px;
+	left: 20px;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	z-index: 1;
+	margin-left: 0px;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #616161;
+	transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+	content: '';
+	top: -8px;
+  }
+  .menu__btn > span::after {
+	content: '';
+	top: 8px;
+  }
+  .menu__box {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 300px;
+	height: 100%;
+	margin-top: 0;
+	padding: 80px 0;
+	list-style: none;
+	background-color:#0f1111;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+	transition-duration: .25s;
+	padding-top: 150px;
+	
+}
+  .menu__item {
+	display: block;
+	padding: 12px 24px;
+	color: #333;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	transition-duration: .25s;
+  }
+  .menu__item:hover {
+	background-color: #CFD8DC;
+  }
+
 .panel a{
 	text-decoration: none;
 	display: inline;
 	color: #f3f3f3;
-	
+	margin-left: 20px;
 	
 }
 .pan-option p {
@@ -166,10 +244,11 @@ font-weight: 700;
 	background-repeat:no-repeat; 
 	/* -webkit-mask-image: linear-gradient(to bottom,#ebccc8 50%,transparent 70%); */
 	background-size: cover;
-	height: 400px;
+	height: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 60px;
 }
 .hero-mea{
 	height: 30px;
@@ -339,6 +418,7 @@ font-weight: 700;
 	display: block;
 	color: #dddddd;
 	margin-top: 15px;
+	flex-wrap: wrap;
 }
 ul{
 	margin-top:20px; 
@@ -349,6 +429,7 @@ ul{
 	color: #f3f3f3;
 	display: flex;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 .foot-pan{
 	background-color: #202837;
@@ -391,10 +472,20 @@ font-weight: 700;
 /* 1024 */
 @media only screen and (max-width:1024px)
 {
-	.logo{
-		
-		background-image: url("img/lala.png");
+	.navbar{
+		display: flex;
+		width: 1024px;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+	
+	}
+	.logo {
+		background-image: url("img/klipartz.com.png");
 		background-size: cover;
+		height: 40px;
+		width: 100%;
+		margin-top: 10px;	
 	}
 	.nav-search{
 		display: flex;
@@ -449,10 +540,20 @@ font-weight: 700;
 
 @media only screen and (max-width:991px)
 {
-	.logo{
-		
-		background-image: url("img/lala.png");
+	.navbar{
+		display: flex;
+		width: 991px;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+	
+	}
+	.logo {
+		background-image: url("img/klipartz.com.png");
 		background-size: cover;
+		height: 40px;
+		width: 100%;
+		margin-top: 10px;	
 	}
 	.nav-search{
 		display: flex;
@@ -505,10 +606,20 @@ font-weight: 700;
 /* 880 */
 @media only screen and (max-width:880px)
 {
-	.logo{
-		
-		background-image: url("img/lala.png");
+	.navbar{
+		display: flex;
+		width: 880px;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+	
+	}
+	.logo {
+		background-image: url("img/klipartz.com.png");
 		background-size: cover;
+		height: 40px;
+		width: 100%;
+		margin-top: 10px;	
 	}
 	.nav-search{
 		display: flex;
@@ -550,10 +661,20 @@ font-weight: 700;
 
 @media only screen and (max-width:785px)
 {
-	.logo{
-		
-		background-image: url("img/lala.png");
+	.navbar{
+		display: flex;
+		width: 785px;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+	
+	}
+	.logo {
+		background-image: url("img/klipartz.com.png");
 		background-size: cover;
+		height: 40px;
+		width: 100%;
+		margin-top: 10px;	
 	}
 	.nav-search{
 		display: flex;
@@ -597,10 +718,20 @@ font-weight: 700;
 
 @media only screen and (max-width:768px)
 {
-	.logo{
-		
-		background-image: url("img/lala.png");
+	.navbar{
+		display: flex;
+		width: 768px;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+	
+	}
+	.logo {
+		background-image: url("img/klipartz.com.png");
 		background-size: cover;
+		height: 40px;
+		width: 100%;
+		margin-top: 10px;	
 	}
 	.nav-search{
 		display: flex;
@@ -642,10 +773,20 @@ font-weight: 700;
 
 @media only screen and (max-width:745px)
 {
-	.logo{
-		
-		background-image: url("img/lala.png");
+	.navbar{
+		display: flex;
+		width: 745px;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+	
+	}
+	.logo {
+		background-image: url("img/klipartz.com.png");
 		background-size: cover;
+		height: 40px;
+		width: 100%;
+		margin-top: 10px;	
 	}
 	.nav-search{
 		display: flex;
@@ -687,10 +828,20 @@ font-weight: 700;
 
 @media only screen and (max-width:716px)
 {
-	.logo{
-		
-		background-image: url("img/lala.png");
+	.navbar{
+		display: flex;
+		width: 716px;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+	
+	}
+	.logo {
+		background-image: url("img/klipartz.com.png");
 		background-size: cover;
+		height: 40px;
+		width: 100%;
+		margin-top: 10px;	
 	}
 	.nav-search{
 		display: flex;
@@ -720,24 +871,27 @@ font-weight: 700;
 		
 	}
 	
-	.foot4 a{
-		/* display: flex; */
-		/* flex-wrap: wrap; */
-		/* margin: 15px; */
-		padding:14px; 
-		
-
-	}
+	
 }
 
 /* 688 */
 
 @media only screen and (max-width:688px)
 {
-	.logo{
-		
-		background-image: url("img/lala.png");
+	.navbar{
+		display: flex;
+		width: 688px;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+	
+	}
+	.logo {
+		background-image: url("img/klipartz.com.png");
 		background-size: cover;
+		height: 40px;
+		width: 100%;
+		margin-top: 10px;	
 	}
 	.nav-search{
 		display: flex;
@@ -768,82 +922,73 @@ font-weight: 700;
 	}
 	
 	.foot4 a{
-		/* display: flex; */
-		/* flex-wrap: wrap; */
-		/* margin: 15px; */
+		
 		padding:14px; 
 		
 
 	}
 }
 
-/* media query for responsive website for 320px*/
+/* media query for responsive website for 412px*/
 
-@media only screen and (max-width:320px)
+@media only screen and (max-width:412px)
 {
-	.nav-address
-	{
-		visibility: hidden;
-	}
-	.nav-lan{
-		visibility: hidden;
-	}
-	.nav-return{
-		visibility: hidden;
-	}
-	.cart-icon{
-		padding-right: 30px;
-		font-size: 25px;
-	}
-	.hello{
-		color: #cccccc;
-		font-size: .7rem;	
-	}
-	.acc{
-		font-weight: 700;
-		color: #ffffff;
-		margin-left: 3px
-	}
-	.nav-search{
-	display: flex;
-	justify-content:space-between;
-	width: 70px;
-	height: 40px;
-	border-radius: 3px;
-	/* align-items: center; */
-}
-.search-select{
-	background-color: #f3f3f3;
-	width: 15px;
-}
-.search-input{
-	width: 90%;
-	font-size: .8rem;
-	border: none;
-}
-.search-icon{
-	width: 45px;
-	display: flex;
-	justify-content:center;
-	align-items: center;
-	font-size: .8rem;
 	
-}
-.nav-logo {
-	height: 50px;
-	width: 110px;
-}
-.logo {
-	background-image: url("img/klipartz.com.png");
-	background-size: cover;
-	height: 40px;
-	width: 100%;	
-}
-.navbar{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	justify-content: space-evenly;
-}
+	.navbar{
+		display: flex;
+		width: 412px;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+		overflow: hidden;
+	}
+	.logo {
+		background-image: url("img/klipartz.com.png");
+		background-size: cover;
+		height: 40px;
+		width: 100%;
+		margin-top: 10px;	
+	}
+	.pan-option{
+		display: none;
+	}
+	.pan-mini p a{
+		font-size: 1.5rem;
+		font-weight: 700;
+		
+	}
+	.hero-sec{
+	width: auto;
+	height: 200px;
+	overflow: hidden;
+	}
+	.hero-mea{
+		margin-top: 100px;
+		font-size: .8rem;
+	}
+	.box{
+		width: 100%;
+		margin: 10px 15px 10px 15px;
+	}
+	.outer{
+		width: 100%;
+		
+	}
+	.inner-img{
+	width: 120px;
+	height: 100px;
+	padding: 15px;
+	}	
+	.pan-2-li{
+		font-size: .8rem;
+		height: 800px;
+		justify-content: space-between;
+	}
+	.pan-2-li a{
+		width: 100%;
+		
+	}
+	
+	
 }
 /* 425 */
