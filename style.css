@@ -11,7 +11,6 @@
 	align-items: center;
 	justify-content:space-evenly;
 	flex-wrap: wrap;
-	position: fixed;
 }
 .nav-logo {
 	height: 50px;
@@ -141,7 +140,7 @@ font-weight: 700;
 	color:whitesmoke;
 	align-items: center;
 	justify-content:space-evenly;
-	
+	/* padding-top:100px;  */
 }
 /* menu */
 #menu__toggle {
@@ -163,7 +162,7 @@ font-weight: 700;
   }
   .menu__btn {
 	position: fixed;
-	top: 115px;
+	top: 75px;
 	left: 20px;
 	width: 26px;
 	height: 26px;
@@ -248,7 +247,7 @@ font-weight: 700;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 60px;
+	/* margin-top: 60px; */
 }
 .hero-mea{
 	height: 30px;
@@ -571,6 +570,7 @@ font-weight: 700;
 	.search-icon{
 		width: 35px;
 	}
+	
 	.hero-mea{
 		height: 30px;
 		width: 85%;
@@ -603,6 +603,69 @@ font-weight: 700;
 		padding: 4px;
 	}
 }
+/* 922 */
+@media only screen and (max-width:952px)
+{
+	.navbar{
+		display: flex;
+		width: 100%;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+		position: fixed;
+	
+	}
+	.logo {
+		background-image: url("img/klipartz.com.png");
+		background-size: cover;
+		height: 40px;
+		width: 100%;
+		margin-top: 10px;	
+	}
+	.nav-search{
+		display: flex;
+		/* justify-content:space-evenly; */
+		width: 200px;
+		height: 40px;
+		border-radius: 3px;
+		/* align-items: center; */
+	}
+	.search-select{
+		background-color: #f3f3f3;
+		width: 50px;
+		text-align: left;
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+		border: none;
+	}
+	.search-input{
+		width: 50%;
+		font-size: 1rem;
+		border: none;
+	}
+	.inner-img{
+		background-size: cover;
+		width: 140px;
+		height: 120px;
+		
+	}
+	.pan-2-li{
+		font-size: .8rem;
+		height: 400px;
+		justify-content: space-between;
+	}
+	.pan-2-li a{
+		width: 100%;
+		
+	}
+	
+	.foot4 a{
+		
+		padding:14px; 
+		
+
+	}
+}
 /* 880 */
 @media only screen and (max-width:880px)
 {
@@ -612,7 +675,7 @@ font-weight: 700;
 		height: 100px;
 		justify-content: space-evenly;
 		align-items: center;
-	
+		position: fixed;
 	}
 	.logo {
 		background-image: url("img/klipartz.com.png");
@@ -667,7 +730,7 @@ font-weight: 700;
 		height: 100px;
 		justify-content: space-evenly;
 		align-items: center;
-	
+		position: fixed;
 	}
 	.logo {
 		background-image: url("img/klipartz.com.png");
@@ -724,7 +787,7 @@ font-weight: 700;
 		height: 100px;
 		justify-content: space-evenly;
 		align-items: center;
-	
+		position: fixed;
 	}
 	.logo {
 		background-image: url("img/klipartz.com.png");
@@ -758,7 +821,7 @@ font-weight: 700;
 		background-size: cover;
 		width: 130px;
 		height: 120px;
-		
+		position: fixed;
 	}
 	
 	.foot4 a{
@@ -779,7 +842,7 @@ font-weight: 700;
 		height: 100px;
 		justify-content: space-evenly;
 		align-items: center;
-	
+		position: fixed;
 	}
 	.logo {
 		background-image: url("img/klipartz.com.png");
@@ -834,7 +897,7 @@ font-weight: 700;
 		height: 100px;
 		justify-content: space-evenly;
 		align-items: center;
-	
+		position: fixed;
 	}
 	.logo {
 		background-image: url("img/klipartz.com.png");
@@ -884,6 +947,7 @@ font-weight: 700;
 		height: 100px;
 		justify-content: space-evenly;
 		align-items: center;
+		position: fixed;
 	
 	}
 	.logo {
@@ -931,7 +995,7 @@ font-weight: 700;
 
 /* media query for responsive website for 412px*/
 
-@media only screen and (max-width:412px)
+@media only screen and (max-width:414px)
 {
 	
 	.navbar{
@@ -941,6 +1005,74 @@ font-weight: 700;
 		justify-content: space-evenly;
 		align-items: center;
 		overflow: hidden;
+		position: fixed;
+	}
+	.logo {
+		background-image: url("img/klipartz.com.png");
+		background-size: cover;
+		height: 40px;
+		width: 100%;
+		margin-top: 10px;	
+	}
+	.pan-option{
+		display: none;
+	}
+	.pan-mini p a{
+		font-size: 1.5rem;
+		font-weight: 700;
+		
+	}
+	.menu__btn{
+		top:115px;
+	}
+	.hero-sec{
+	width: auto;
+	height: 200px;
+	overflow: hidden;
+	}
+	.hero-mea{
+		margin-top: 100px;
+		font-size: .8rem;
+	}
+	.box{
+		width: 100%;
+		margin: 10px 15px 10px 15px;
+	}
+	.outer{
+		width: 100%;
+		
+	}
+	.inner-img{
+	width: 120px;
+	height: 100px;
+	padding: 15px;
+	}	
+	.pan-2-li{
+		font-size: .8rem;
+		height: 800px;
+		justify-content: space-between;
+	}
+	.pan-2-li a{
+		width: 100%;
+		
+	}
+	
+	
+}
+
+/* 500 */
+
+@media only screen and (max-width:500px)
+{
+	
+	.navbar{
+		display: flex;
+		width: auto;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+		overflow: hidden;
+		position: fixed;
 	}
 	.logo {
 		background-image: url("img/klipartz.com.png");
@@ -988,7 +1120,108 @@ font-weight: 700;
 		width: 100%;
 		
 	}
+}
+/* 375 */
+
+@media only screen and (max-width:375px)
+{
+	
+	.navbar{
+		display: flex;
+		width: 412px;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+		overflow: hidden;
+		position: fixed;
+	}
+	.logo {
+		background-image: url("img/klipartz.com.png");
+		background-size: cover;
+		height: 40px;
+		width: 100%;
+		margin-top: 10px;	
+	}
+	.nav-search{
+		width: 30%;
+	}
+	/* .search-input{
+		width: 20%;
+	} */
+	.pan-option{
+		display: none;
+	}
+	.pan-mini p a{
+		font-size: 1.5rem;
+		font-weight: 700;
+		
+	}
+	.hero-sec{
+	width: auto;
+	height: 200px;
+	overflow: hidden;
+	}
+	.hero-mea{
+		margin-top: 100px;
+		font-size: .8rem;
+	}
+	.box{
+		width: 100%;
+		margin: 10px 15px 10px 15px;
+	}
+	.outer{
+		width: 100%;
+		
+	}
+	.inner-img{
+	width: 110px;
+	height: 90px;
+	padding: 15px;
+	}	
+	.pan-2-li{
+		font-size: .8rem;
+		height: 800px;
+		justify-content: space-between;
+	}
+	.pan-2-li a{
+		width: 100%;
+		
+	}
+}
+/* 384 */
+@media only screen and (max-width:384px)
+{
+	
+	.navbar{
+		display: flex;
+		width: auto;
+		height: 100px;
+		justify-content: space-evenly;
+		align-items: center;
+		overflow: hidden;
+		position: fixed;
+	}
+	/* */
+	.nav-search{
+		width: 30%;
+	}
+	/* .search-input{
+		width: 20%;
+	} */
+	
+}
+/* 360 */
+@media only screen and (max-width:360px)
+{
+	.pan-2-li{
+		font-size: .8rem;
+		height: 1800px;
+		justify-content: space-between;
+	}
+	.pan-2-li a{
+		width: 100%;
+		
+	}
 	
 	
 }
-/* 425 */
